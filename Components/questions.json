@@ -77,7 +77,7 @@
         "question": "You need a dynamic way of provisioning VMs on Compute Engine. The exact specifications will be in a dedicated configuration file. You want to follow Google's recommended practices. Which method should you use?",
         "options": ["Deployment Manager", "Cloud Composer", "Managed Instance Group", "Unmanaged Instance Group"],
         "correctAnswer": "Deployment Manager"
-      },
+      }
     
   ]
   
