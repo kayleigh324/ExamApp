@@ -5,7 +5,8 @@ import Exam from './Components/Exam';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello Francesca and Andalyn</Text>
+      <Text>Google Cloud Associate Cloud Engineer </Text>
+      <Text>Exam questions</Text>
       <Exam />
       <StatusBar style="auto" />
     </View>
