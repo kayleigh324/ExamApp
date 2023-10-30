@@ -36,11 +36,9 @@ const Exam = () => {
   console.log("Rendering exam component");
 
   return (
-    <View>
-      
-
+    <View style={styles.container}>
       {questions[currentQuestion] && questions[currentQuestion].question && (
-        <Text>{questions[currentQuestion].question}</Text>
+        <Text style={styles.questionText}>{questions[currentQuestion].question}</Text>
       )}
 
       {questions[currentQuestion] && questions[currentQuestion].options && (
@@ -64,27 +62,62 @@ const Exam = () => {
         ))
       )}
 
-      <TouchableOpacity onPress={nextQuestion}>
-        <Text>Next Question</Text>
-      </TouchableOpacity>
+      <View style={styles.buttonContainer}>
+        <View style={styles.buttonWrapper}>
+          <TouchableOpacity onPress={previousQuestion} style={styles.button}>
+            <Text style={styles.buttonText}>Previous Question</Text>
+          </TouchableOpacity>
+        </View>
 
-      {currentQuestion > 0 && (
-        <TouchableOpacity onPress={previousQuestion}>
-          <Text>Previous Question</Text>
-        </TouchableOpacity>
-      )}
+        <View style={styles.buttonWrapper}>
+          <TouchableOpacity onPress={nextQuestion} style={styles.button}>
+            <Text style={styles.buttonText}>Next Question</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    padding: 10,
+    borderWidth: 1,
+    borderColor: 'black',
+    borderRadius: 10,
+    margin: 10, // Added margin for space outside the component
+  },
+  questionText: {
+    marginBottom: 10,
+    fontSize: 15,
+    fontWeight: 'bold',
+    marginLeft: 5, // Added margin for space from the edge
+    marginRight: 5, // Added margin for space from the edge
+  },
   option: {
     padding: 10,
     margin: 5,
     borderWidth: 2,
     borderRadius: 5,
+    borderColor: 'blue',
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 10,
+  },
+  buttonWrapper: {
+    width: '48%',
+  },
+  button: {
+    borderWidth: 1,
+    borderColor: 'black',
+    padding: 10,
+    borderRadius: 5,
+  },
+  buttonText: {
+    textAlign: 'center',
   },
 });
 
 export default Exam;
-
