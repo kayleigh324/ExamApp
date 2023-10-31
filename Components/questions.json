@@ -264,5 +264,10 @@
         "question": "You have production and test workloads that you want to deploy on Compute Engine. Production VMs need to be in a different subnet than the test VMs. All the VMs must be able to reach each other over Internal IP without creating additional routes. You need to set up VPC and the 2 subnets. Which configuration meets these requirements?",
         "options": ["Create a single custom VPC with 2 subnets. Create each subnet in a different region and with a different CIDR range.", "Create a single custom VPC with 2 subnets. Create each subnet in the same region and with the same CIDR range.", "Create 2 custom VPCs, each with a single subnet. Create each subnet in a different region and with a different CIDR range.", "Create 2 custom VPCs, each with a single subnet. Create each subnet in the same region and with the same CIDR range."],
         "correctAnswer": "Create a single custom VPC with 2 subnets. Create each subnet in a different region and with a different CIDR range."
+      },{
+        "section": 1,
+        "question": "You need to create an autoscaling managed instance group for an HTTPS web application. You want to make sure that unhealthy VMs are recreated. What should you do?",
+        "options": ["Create a health check on port 443 and use that when creating the Managed Instance Group.", "Select Multi-Zone instead of Single-Zone when creating the Managed Instance Group.", "In the Instance Template, add the label 'health-check'.", "In the Instance Template, add a startup script that sends a heartbeat to the metadata server."],
+        "correctAnswer": "Create a health check on port 443 and use that when creating the Managed Instance Group."
       }
   ]
