@@ -128,6 +128,47 @@
         "question": "You have one GCP account running in your default region and zone and another account running in a non-default region and zone. You want to start a newCompute Engine instance in these two Google Cloud Platform accounts using the command line interface. What should you do?",
         "options": ["Create two configurations using gcloud config configurations create [NAME]. Run gcloud config configurations activate [NAME] to switch between accounts when running the commands to start the Compute Engine instances.", "Create two configurations using gcloud config configurations create [NAME]. Run gcloud configurations list to start the Compute Engine instances.", "Activate two configurations using gcloud configurations activate [NAME]. Run gcloud config list to start the Compute Engine instances.", "Activate two configurations using gcloud configurations activate [NAME]. Run gcloud configurations list to start the Compute Engine instances."],
         "correctAnswer": "Create two configurations using gcloud config configurations create [NAME]. Run gcloud config configurations activate [NAME] to switch between accounts when running the commands to start the Compute Engine instances."
+      },
+      {
+        "section": 1,
+        "question": "You significantly changed a complex Deployment Manager template and want to confirm that the dependencies of all defined resources are properly met before committing it to the project. You want the most rapid feedback on your changes. What should you do?",
+        "options": ["Use granular logging statements within a Deployment Manager template authored in Python.", "Monitor activity of the Deployment Manager execution on the Stackdriver Logging page of the GCP Console.", "Execute the Deployment Manager template against a separate project with the same configuration, and monitor for failures.", "Execute the Deployment Manager template in the same project with the '-preview' option enabled, and monitor the status of interconnected resources."],
+        "correctAnswer": "Execute the Deployment Manager template in the same project with the '-preview' option enabled, and monitor the status of interconnected resources."
+      },{
+        "section": 1,
+        "question": "You have a project for your App Engine application that serves a development environment. The required testing has succeeded and you want to create a new project to serve as your production environment. What should you do?",
+        "options": ["Use gcloud to create the new project, and then deploy your application to the new project.", "Use gcloud to create the new project and to copy the deployed application to the new project.", "Create a Deployment Manager configuration file that copies the current App Engine deployment into a new project.", "Deploy your application again using gcloud and specify the project parameter with the new project name to create the new project."],
+        "correctAnswer": "Use gcloud to create the new project, and then deploy your application to the new project."
+      },{
+        "section": 1,
+        "question": "You need to configure IAM access audit logging in BigQuery for external auditors. You want to follow Google-recommended practices. What should you do?",
+        "options": ["Add the auditors group to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles.", "Add the auditors group to two new custom IAM roles.", "Add the auditor user accounts to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles.", "Add the auditor user accounts to two new custom IAM roles."],
+        "correctAnswer": "Add the auditors group to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles."
+      },{
+        "section": 1,
+        "question": "You need to set up permissions for a set of Compute Engine instances to enable them to write data into a particular Cloud Storage bucket. You want to follow Google-recommended practices. What should you do?",
+        "options": ["Create a service account with an access scope. Use the access scope 'https://www.googleapis.com/auth/devstorage.write_only'.", "Create a service account with an access scope. Use the access scope 'https://www.googleapis.com/auth/cloud-platform'.", "Create a service account and add it to the IAM role 'storage.objectCreator' for that bucket.", "Create a service account and add it to the IAM role 'storage.objectAdmin' for that bucket."],
+        "correctAnswer": "Create a service account and add it to the IAM role 'storage.objectCreator' for that bucket."
+      },{
+        "section": 1,
+        "question": "You have sensitive data stored in three Cloud Storage buckets and have enabled data access logging. You want to verify activities for a particular user for these buckets, using the fewest possible steps. You need to verify the addition of metadata labels and which files have been viewed from those buckets. What should you do?",
+        "options": ["Using the GCP Console, filter the Activity log to view the information.", "Using the GCP Console, filter the Stackdriver log to view the information.", "View the bucket in the Storage section of the GCP Console.", "Create a trace in Stackdriver to view the information."],
+        "correctAnswer": "Using the GCP Console, filter the Activity log to view the information."
+      },{
+        "section": 1,
+        "question": "You are the project owner of a GCP project and want to delegate control to colleagues to manage buckets and files in Cloud Storage. You want to follow Google- recommended practices. Which IAM roles should you grant your colleagues?",
+        "options": ["Project Editor", "Storage Admin", "Storage Object Admin", "Storage Object Creator"],
+        "correctAnswer": "Storage Admin"
+      },{
+        "section": 1,
+        "question": "You have an object in a Cloud Storage bucket that you want to share with an external company. The object contains sensitive data. You want access to the content to be removed after four hours. The external company does not have a Google account to which you can grant specific user-based access privileges. You want to use the most secure method that requires the fewest steps. What should you do?",
+        "options": ["Create a signed URL with a four-hour expiration and share the URL with the company.", "Set object access to 'public' and use object lifecycle management to remove the object after four hours.", "Configure the storage bucket as a static website and furnish the object's URL to the company. Delete the object from the storage bucket after four hours.", "Create a new Cloud Storage bucket specifically for the external company to access. Copy the object to that bucket. Delete the bucket after four hours have passed."],
+        "correctAnswer": "Create a signed URL with a four-hour expiration and share the URL with the company."
+      },{
+        "section": 1,
+        "question": "You are creating a Google Kubernetes Engine (GKE) cluster with a cluster autoscaler feature enabled. You need to make sure that each node of the cluster will run a monitoring pod that sends container metrics to a third-party monitoring solution. What should you do?",
+        "options": ["Deploy the monitoring pod in a StatefulSet object.", "Deploy the monitoring pod in a DaemonSet object.", "Reference the monitoring pod in a Deployment object.", " Reference the monitoring pod in a cluster initializer at the GKE cluster creation time."],
+        "correctAnswer": "Deploy the monitoring pod in a DaemonSet object."
       }
     
   ]
