@@ -214,6 +214,26 @@
         "question": "You create a new Google Kubernetes Engine (GKE) cluster and want to make sure that it always runs a supported and stable version of Kubernetes. What should you do?",
         "options": ["Enable the Node Auto-Repair feature for your GKE cluster.", "Enable the Node Auto-Upgrades feature for your GKE cluster.", "Select the latest available cluster version for your GKE cluster.", "Select ג€Container-Optimized OS (cos)ג€ as a node image for your GKE cluster."],
         "correctAnswer": "Enable the Node Auto-Upgrades feature for your GKE cluster."
+      },{
+        "section": 1,
+        "question": "You have an instance group that you want to load balance. You want the load balancer to terminate the client SSL session. The instance group is used to serve a public web application over HTTPS. You want to follow Google-recommended practices. What should you do?",
+        "options": ["Configure an HTTP(S) load balancer.", "Configure an internal TCP load balancer.", "Configure an external SSL proxy load balancer.", "Configure an external TCP proxy load balancer."],
+        "correctAnswer": "Configure an HTTP(S) load balancer."
+      },{
+        "section": 1,
+        "question": "You have 32 GB of data in a single file that you need to upload to a Nearline Storage bucket. The WAN connection you are using is rated at 1 Gbps, and you are the only one on the connection. You want to use as much of the rated 1 Gbps as possible to transfer the file rapidly. How should you upload the file?",
+        "options": ["Use the GCP Console to transfer the file instead of gsutil.", "Enable parallel composite uploads using gsutil on the file transfer.", "Decrease the TCP window size on the machine initiating the transfer.", "Change the storage class of the bucket from Nearline to Multi-Regional."],
+        "correctAnswer": "Enable parallel composite uploads using gsutil on the file transfer."
+      },{
+        "section": 1,
+        "question": "You are running an application on multiple virtual machines within a managed instance group and have autoscaling enabled. The autoscaling policy is configured so that additional instances are added to the group if the CPU utilization of instances goes above 80%. VMs are added until the instance group reaches its maximum limit of five VMs or until CPU utilization of instances lowers to 80%. The initial delay for HTTP health checks against the instances is set to 30 seconds. The virtual machine instances take around three minutes to become available for users. You observe that when the instance group autoscales, it adds more instances then necessary to support the levels of end-user traffic. You want to properly maintain instance group sizes when autoscaling. What should you do?",
+        "options": ["Set the maximum number of instances to 1.", "Decrease the maximum number of instances to 3.", "Use a TCP health check instead of an HTTP health check.", "Increase the initial delay of the HTTP health check to 200 seconds."],
+        "correctAnswer": "Increase the initial delay of the HTTP health check to 200 seconds."
+      },{
+        "section": 1,
+        "question": "You need to select and configure compute resources for a set of batch processing jobs. These jobs take around 2 hours to complete and are run nightly. You want to minimize service costs. What should you do?",
+        "options": ["Select Google Kubernetes Engine. Use a single-node cluster with a small instance type.", "Select Google Kubernetes Engine. Use a three-node cluster with micro instance types.", "Select Compute Engine. Use preemptible VM instances of the appropriate standard machine type.", "Select Compute Engine. Use VM instance types that support micro bursting."],
+        "correctAnswer": "Select Compute Engine. Use preemptible VM instances of the appropriate standard machine type."
       }
     
   ]
