@@ -204,6 +204,16 @@
         "question": "You created a Google Cloud Platform project with an App Engine application inside the project. You initially configured the application to be served from the us- central region. Now you want the application to be served from the asia-northeast1 region. What should you do?",
         "options": ["Change the default region property setting in the existing GCP project to asia-northeast1.", "Change the region property setting in the existing App Engine application from us-central to asia-northeast1.", "Create a second App Engine application in the existing GCP project and specify asia-northeast1 as the region to serve your application.", "Create a new GCP project and create an App Engine application inside this new project. Specify asia-northeast1 as the region to serve your application."],
         "correctAnswer": "Create a new GCP project and create an App Engine application inside this new project. Specify asia-northeast1 as the region to serve your application."
+      },{
+        "section": 1,
+        "question": "  You need to grant access for three users so that they can view and edit table data on a Cloud Spanner instance. What should you do?",
+        "options": ["Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to the role.", "Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to a new group. Add the group to the role. ", "Run gcloud iam roles describe roles/spanner.viewer - -project my-project. Add the users to the role.", "Run gcloud iam roles describe roles/spanner.viewer - -project my-project. Add the users to a new group. Add the group to the role."],
+        "correctAnswer": "Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to a new group. Add the group to the role. "
+      },{
+        "section": 1,
+        "question": "You create a new Google Kubernetes Engine (GKE) cluster and want to make sure that it always runs a supported and stable version of Kubernetes. What should you do?",
+        "options": ["Enable the Node Auto-Repair feature for your GKE cluster.", "Enable the Node Auto-Upgrades feature for your GKE cluster.", "Select the latest available cluster version for your GKE cluster.", "Select ג€Container-Optimized OS (cos)ג€ as a node image for your GKE cluster."],
+        "correctAnswer": "Enable the Node Auto-Upgrades feature for your GKE cluster."
       }
     
   ]
