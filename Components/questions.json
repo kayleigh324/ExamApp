@@ -179,7 +179,16 @@
         "question": "You need to monitor resources that are distributed over different projects in Google Cloud Platform. You want to consolidate reporting under the same Stackdriver Monitoring dashboard. What should you do?",
         "options": ["Use Shared VPC to connect all projects, and link Stackdriver to one of the projects.", "For each project, create a Stackdriver account. In each project, create a service account for that project and grant it the role of Stackdriver Account Editor in all other projects.", "Configure a single Stackdriver account, and link all projects to the same account.", "Configure a single Stackdriver account for one of the projects. In Stackdriver, create a Group and add the other project names as criteria for that Group."],
         "correctAnswer": "Configure a single Stackdriver account, and link all projects to the same account."
+      },{
+        "section": 1,
+        "question": "  You are deploying an application to a Compute Engine VM in a managed instance group. The application must be running at all times, but only a single instance of the VM should run per GCP project. How should you configure the instance group?",
+        "options": ["Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1.", "Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 1.", "Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 2.", "Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 2."],
+        "correctAnswer": "Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1."
+      },{
+        "section": 1,
+        "question": "You want to verify the IAM users and roles assigned within a GCP project named my-project. What should you do?",
+        "options": ["Run gcloud iam roles list. Review the output section.", "Run gcloud iam service-accounts list. Review the output section.", "Navigate to the project and then to the IAM section in the GCP Console. Review the members and roles.", "Navigate to the project and then to the Roles section in the GCP Console. Review the roles and status."],
+        "correctAnswer": "Navigate to the project and then to the IAM section in the GCP Console. Review the members and roles."
       }
     
   ]
-  
