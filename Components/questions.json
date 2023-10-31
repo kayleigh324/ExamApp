@@ -169,6 +169,16 @@
         "question": "You are creating a Google Kubernetes Engine (GKE) cluster with a cluster autoscaler feature enabled. You need to make sure that each node of the cluster will run a monitoring pod that sends container metrics to a third-party monitoring solution. What should you do?",
         "options": ["Deploy the monitoring pod in a StatefulSet object.", "Deploy the monitoring pod in a DaemonSet object.", "Reference the monitoring pod in a Deployment object.", " Reference the monitoring pod in a cluster initializer at the GKE cluster creation time."],
         "correctAnswer": "Deploy the monitoring pod in a DaemonSet object."
+      },{
+        "section": 1,
+        "question": "You want to send and consume Cloud Pub/Sub messages from your App Engine application. The Cloud Pub/Sub API is currently disabled. You will use a service account to authenticate your application to the API. You want to make sure your application can use Cloud Pub/Sub. What should you do?",
+        "options": ["Enable the Cloud Pub/Sub API in the API Library on the GCP Console.", "Rely on the automatic enablement of the Cloud Pub/Sub API when the Service Account accesses it.", "Use Deployment Manager to deploy your application. Rely on the automatic enablement of all APIs used by the application being deployed.", "Grant the App Engine Default service account the role of Cloud Pub/Sub Admin. Have your application enable the API on the first connection to Cloud Pub/ Sub."],
+        "correctAnswer": "Enable the Cloud Pub/Sub API in the API Library on the GCP Console."
+      },{
+        "section": 1,
+        "question": "You need to monitor resources that are distributed over different projects in Google Cloud Platform. You want to consolidate reporting under the same Stackdriver Monitoring dashboard. What should you do?",
+        "options": ["Use Shared VPC to connect all projects, and link Stackdriver to one of the projects.", "For each project, create a Stackdriver account. In each project, create a service account for that project and grant it the role of Stackdriver Account Editor in all other projects.", "Configure a single Stackdriver account, and link all projects to the same account.", "Configure a single Stackdriver account for one of the projects. In Stackdriver, create a Group and add the other project names as criteria for that Group."],
+        "correctAnswer": "Configure a single Stackdriver account, and link all projects to the same account."
       }
     
   ]
